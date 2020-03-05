@@ -1,0 +1,36 @@
+/*
+ * Comments are written as C++ style. 
+ */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    background: #fff;
+    width: 700px;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-menu{
+    width: inherit;
+    height: 20px;
+    display:grid;
+    grid-template-columns: 50px 70px 70px 70px 70px;
+}
+.nav-menu > a{
+    color: mediumblue;
+    padding: 0.2em;
+    width: fit-content;
+    transition: color .7s, font-weight .7s, font-size .7s, border .3s ease-in-out;
+}
+.nav-menu > a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+    border: 2px red solid;
+    border-radius: 50%;
+}
