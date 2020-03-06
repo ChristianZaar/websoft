@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/lottoStyle.css">
+</head>
+<body>
+    <div>
+        <table> 
+            <thead>Eurojackpot numbers
+                <tr>
+                    <% for(let i = 0; i < correct_numbers.length; i++){ %>
+                         <th>
+                            <%= i+1 %> 
+                         </th>
+                    <% }; %>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <%
+                    //Set how many correct numbers below table
+                    var footerNote = lucky_numbers !== ""? "You have " + lucky_numbers.length + " correct!": "";
+
+                    for(let i = 0; i < correct_numbers.length; i++){ 
+                         
+                        var styleCorrect = "";
+
+                        //Check if numbers are given and correct
+                        if (lucky_numbers !== ""){
+                            
+                            for (let j = 0; j < lucky_numbers.length; j++){
+                                
+                                if(lucky_numbers[j] === correct_numbers[i]){
+                                    styleCorrect = "background-color: green";
+                                    lucky_numbers.splice(j, 1);
+                                    break;
+                                }
+                            }
+                        }
+                        %>
+                        <td style="<%= styleCorrect %>";>
+                           <%= correct_numbers[i] %> 
+                        </td>
+                   <% }; %>
+                </tr>
+            </tbody>
+            <caption align="bottom"> <%= footerNote %> </caption>
+        </table>
+
+    </div>
+</body>

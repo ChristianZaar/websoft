@@ -9,9 +9,14 @@ table {
 thead {
     background: linear-gradient(to bottom, rgba(135, 124, 235, 0.5), rgba(136, 255, 0, 0.904));
     font-family: 'Rock Salt', cursive;
-    text-align: left;
+    text-align: center;
 }
 
+td{
+  width: 3em;
+  text-align: center;
+  border: 1px solid black;
+}
 tbody tr:nth-child(odd) {
     background-color: #7beef7;
   }

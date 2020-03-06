@@ -8,12 +8,14 @@ const path    = require("path");
 const express = require("express");
 const app     = express();
 const routeLotto = require("./route/lotto.js");
+const middleware = require("./middleware/index.js");
 
 app.use(express.static(path.join(__dirname, "report")));
 app.use("/", routeLotto);
+app.use(middleware.logIncomingToConsole);
 
 app.listen(port, logStartUpDetailsToConsole);
-
+app.set("view engine", "ejs");
 /**
  * Log app details to console when starting up.
  *
