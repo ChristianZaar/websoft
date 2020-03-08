@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Report from the course sections</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<?php
+require "./view/header.php";   
+?>
+    <article>
+        <header>
+        <h1>A report from the course XXX</h1>
+        </header>
+        <section>
+        <h2>S01</h2>
+            <p>Before this assignment I knew the basic stuff about Git & GitHub. Markdown I have never heard about before. 
+            Github Pages is also new to me. I Have not created a basic website since 2003. That was when i did a very basic webdevelopment course on comvux in Hässleholm. 
+            My previous knowledge is limited. I have only used a little bit of html. I have never tried java script before. Looking forward to it. Seems overall like an interesting course.</p>
+            <p>TIL:<br> 
+            I have learnt about Tagging in git. Some basic html syntax and css. It was the first time I have tried forking on git. Got a good overview of the course. 
+            </p>
+        </section>
+        <section>
+        <h2>S02</h2>
+            <p>Have you any previous experience of HTML, CSS and/or JavaScript?
+            Explain the role of HTML, CSS and JavaScript in web development.
+            Give a brief explanation of how the browser, the HTTP protocol and the web server interacts.
+            What is your TIL for this course section?</p>
+            <p>
+                I have no prior experience in html except for a basic webdevelopment course i finished 15 years ago. I have used some css in other courses in this program. JavaScript i have no experience of.
+                The role of html is to design the layout os the web pages. Css main purpose is to style the web page. JavaScript is used to make webpages dynamic. The interaction of the browser, http and the 
+                server is that the client sends a request to the server using http. Then the server responds using http eg.  if it is a GET request and a webpage is requested this will be attached in the body of the response.   
+            </p>
+            <p>TIL:<br> 
+            I have learned alot about different html markup tags. I also learned some new ways of using css. I did the learn web development. It was very informative.  
+            </p>
+        </section>
+
+        <section>
+        <h2>S03</h2>
+            <p>Do you have any previous experience of client side JavaScript?<br>
+                -None what so ever.
+            </p>
+            <p>Can you compare and relate the JavaScript language to any other language you know?<br>
+                -I think it seems quite similar to java. 
+            </p>
+            <p>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?<br>
+            -There was alot of experimenting and testing before i decided on wich solution to use. I am aming for a 5. My code is nicely structured.
+            </p>
+            <p>TIL:<br> 
+            I have deepened my js,css and html skills. Learned alot about how to generate html content from js. It was nice to try fetch.  
+            </p>
+        </section>
+
+        <section>
+        <h2>S04</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S05</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S06</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S07</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S08</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S09</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+
+        <section>
+        <h2>S10</h2>
+        <p>Here is the text for this section.</p>
+        </section>
+    </article>
+    <?php
+        require "./view/footer.php";
+    ?>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
