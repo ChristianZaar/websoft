@@ -18,7 +18,7 @@ $sql = "SELECT * FROM tech";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $res1 = $stmt->fetchAll();
-//var_dump($res1);
+var_dump($_SERVER['PHP_SELF']);
 
 if ($item) {
     //var_dump($item);
@@ -93,7 +93,7 @@ if ($delete) {
         </fieldset>
     </form>
     <?php endif; ?>
-
+    
     <?php
         require "./view/table.php";
         require "./view/footer.php";

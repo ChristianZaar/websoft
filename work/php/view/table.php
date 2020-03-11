@@ -24,7 +24,7 @@
                 <?php 
                 for( $j= 1 ; $j <= $i ; $j++ )
                 {?>
-                    <script>selectRow('<?= "tr".$j ?>','<?=$arr["$j"]?>' );</script>
+                    <script>selectRow('<?= "tr".$j ?>','<?=$arr["$j"]?>' , "<?=$_SERVER['PHP_SELF']?>");</script>
                 <?php } ?>
             </tbody>    
         </table>
