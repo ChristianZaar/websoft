@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Accounts</h1>
+    <form class="form-v2" method="POST" action="api/Accounts/transfer">
+        <fieldset class ="fieldset-v2">
+            <legend>Transfer</legend>
+            <label for="FromAccount">Account to transfer from:</label><br>
+            <input type="number" name="FromAccount" id="FromAccount" value=""><br><br>
+            <label for="ToAccount">Account to transfer to:</label><br>
+            <input type="number" name="ToAccount" id="ToAccount" value=""><br><br>
+            <label for="Amount">Amount:</label><br>
+            <input type="number" name="Amount" id="Amount" value=""><br><br>
+            <button type="submit">Transfer</button><br>
+        </fieldset>
+    </form>
+    <table class="table-v2">
+        <thead class="thead-v2"> 
+            <tr>
+                <th>Number</th>
+                <th>Balance</th>
+                <th>Label</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody class="tbody-v2">
+            @foreach (var a in Model.Accounts){
+                <tr>
+                    <td>@a.Number</td>
+                    <td>@a.Balance</td>
+                    <td>@a.Label</td>
+                    <td>@a.Owner</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

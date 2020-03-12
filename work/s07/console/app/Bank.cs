@@ -119,25 +119,6 @@ namespace BankApp
         }
 
         /// <summary>
-        /// Gets menu input from user
-        /// </summary>
-        /// <param name="min"></param>
-        /// <param name="max"></param>
-        /// <returns></returns>
-        public int GetIntInput(int min, int max)
-        {
-            int choice;
-            do
-            {
-                if (!int.TryParse(Console.ReadLine(), out choice) || choice < min || choice > max)
-                {
-                    Console.WriteLine("Input is not valid");
-                }
-            } while (choice < min || choice > max);
-            return choice;
-        }
-
-        /// <summary>
         /// Executes action selected in menu
         /// </summary>
         /// <param name="n"></param>
