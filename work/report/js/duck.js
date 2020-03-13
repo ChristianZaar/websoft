@@ -1,7 +1,18 @@
 
+"use strict";
 (function () {
-    "use strict";
     var duck = document.createElement("img"); 
+    addDuck(duck);
+    var move = 0;
+
+    setInterval(function () { 
+        move++;
+        move %= 8; 
+        blink(duck, move);
+    }, 400);
+  })();
+
+function addDuck(duck){
     duck.src = "img/duck.png";
     duck.style.width = "100px";
     duck.style.position = "absolute";
@@ -10,16 +21,9 @@
         duck.style.top = Math.floor(Math.random() * 50 + 25) + '%';
         duck.style.left = Math.floor(Math.random() * 50 + 25) + '%'
     };
-    var move = 0;
-    setInterval(function () { 
-        move++;
-        move %= 8; 
-        blink(duck, move);
-    }, 400);
-  })();
+}
 
 function blink(duck, move) {
-    "use strict";
     /*if (move === 1){
         duck.style.top = Math.floor(Math.random() * 50 + 25) + '%';
         duck.style.left = Math.floor(Math.random() * 50 + 25) + '%';
@@ -35,6 +39,5 @@ function blink(duck, move) {
             duck.style.visibility = "visible";
         }, 500);
     }
-    
 }
   
