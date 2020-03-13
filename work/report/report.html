@@ -109,7 +109,7 @@
             </p>
             <p>Do your own investigation on https://trends.google.com (Links to an external site.) to customize your own comparison on programming languages (or frameworks) and elaborate on the results.<br>
                 - I compared c# and java the result correlated with tiobe index that java is more popular. But C# seems to have 30 % of their combined market on google and 23% on tiobe index.
-            </p>w
+            </p>
             <p>If you were to recommend a language/framework/technology to your potential employer and your next large project, what would it be and how would you “sell it”?
                 I would sell it based on which frameworks are available and how fast it is compared to others developing the type of applications that the employer is interested of. The employer likely already is 
                 using a language and a framework that could be compared to others. But i think it is har to push for a new language. Maintainance and education will be more expensive to the company if it has a large 
@@ -130,10 +130,11 @@
         </p>
         <p>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?<br>
             -I watched the videos and attended the lectures. Then i started with the console application. Then i did the asp.net. I am quite pleased with my result There
-            is alot of error handling. And i produced two robust applications
+            is alot of error handling. And i produced two robust applications. They both have all requirements for grade 5.
         </p>
         <p>TIL:<br> 
         It was my first time testing asp.net. I learned alot. Think that razor pages are really smooth and easy to use. The model view controller concept is easy to understand.
+        </p>
         </section>
 
         <section>
@@ -178,7 +179,19 @@
 
         <section>
         <h2>S09</h2>
-        <p>Here is the text for this section.</p>
+        <p>Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten.<br>
+            - One of the OWASP top ten was injection. When it comes to sql injection preparedstatements are a good option. Then there is a control that no other commands than the intended are executed. Security miss configuration was another
+            of the top ten. This is a common misstake when installing openssh on Linux. It Defaults to port 22 and and can be sensitive for attacks. This port should be changed and use public key access instead of password login. Using components with known 
+            vulnerabilities is another. This could be as simple as just updating your server with the latest updates. Avoiding vulnerabilities to be used.
+        </p>
+        <p>Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.<br>
+            - When it comes to sql injection preparedstatements are a good option. Then there is a control that no other commands than the intended are executed. Never have easy to crack passwords and never have the same password to different logins. Keep your software updated 
+            so that nobody uses vulnerabilities for malicous purposes. Remove unused admin accounts and close unused ports. Use ssl for encrypted communications. Use a good firewall that only allows the intended type of traffic. Encrypt sensative data incase of a breach.
+
+        </p>
+        <p>TIL:<br> 
+        I got a basic view on web application vulnerabilities. I still feel like i still have a lot to learn on security issues. I think we got some good advice that are quite easy to implement like preparedstatements against sql injection. 
+        </p>
         </section>
 
         <section>
@@ -191,6 +204,7 @@
             <p>Chrisitan Zaar &#9400 2020</p>
         </footer>
     </article>
+    <script type="text/javascript" src="js/duck.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
