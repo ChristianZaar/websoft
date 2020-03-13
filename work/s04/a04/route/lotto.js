@@ -35,6 +35,9 @@ router.get('/lotto-json', (req, res) => {
   let numbers = getNumbers();
 
   let lotto = formatData(numbers, queryString);
+  
+  if (lotto.lucky_numbers === "")
+	  lotto = lotto.correct_numbers;
   res.json(lotto);
 })
 
