@@ -18,121 +18,211 @@
     </header>
     <article>
         <header>
-        <h1>A report from the course XXX</h1>
+        <h1>A report from the course DA377B</h1>
         </header>
         <section>
         <h2>S01</h2>
             <p>Before this assignment I knew the basic stuff about Git & GitHub. Markdown I have never heard about before. 
             Github Pages is also new to me. I Have not created a basic website since 2003. That was when i did a very basic webdevelopment course on comvux in Hässleholm. 
             My previous knowledge is limited. I have only used a little bit of html. I have never tried java script before. Looking forward to it. Seems overall like an interesting course.</p>
-            <p>TIL:<br> 
+            <p><em>TIL:</em><br> 
             I have learnt about Tagging in git. Some basic html syntax and css. It was the first time I have tried forking on git. Got a good overview of the course. 
             </p>
         </section>
         <section>
         <h2>S02</h2>
-            <p>Have you any previous experience of HTML, CSS and/or JavaScript?
+            <p><em>Have you any previous experience of HTML, CSS and/or JavaScript?
             Explain the role of HTML, CSS and JavaScript in web development.
             Give a brief explanation of how the browser, the HTTP protocol and the web server interacts.
-            What is your TIL for this course section?</p>
+            What is your TIL for this course section?</em></p>
             <p>
                 I have no prior experience in html except for a basic webdevelopment course i finished 15 years ago. I have used some css in other courses in this program. JavaScript i have no experience of.
                 The role of html is to design the layout os the web pages. Css main purpose is to style the web page. JavaScript is used to make webpages dynamic. The interaction of the browser, http and the 
                 server is that the client sends a request to the server using http. Then the server responds using http eg.  if it is a GET request and a webpage is requested this will be attached in the body of the response.   
             </p>
-            <p>TIL:<br> 
+            <p><em>TIL:</em><br> 
             I have learned alot about different html markup tags. I also learned some new ways of using css. I did the learn web development. It was very informative.  
             </p>
         </section>
 
         <section>
         <h2>S03</h2>
-            <p>Do you have any previous experience of client side JavaScript?<br>
+            <p><em>Do you have any previous experience of client side JavaScript?</em><br><br>
                 -None what so ever.
             </p>
-            <p>Can you compare and relate the JavaScript language to any other language you know?<br>
+            <p><em>Can you compare and relate the JavaScript language to any other language you know?</em><br><br>
                 -I think it seems quite similar to java. 
             </p>
-            <p>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?<br>
-            -There was alot of experimenting and testing before i decided on wich solution to use. I am aming for a 5. My code is nicely structured.
+            <p><em>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?</em><br><br>
+            I started with grade 3 requirements. There was alot of experimenting and testing before i decided on wich solution to use. I am aming for a 5. My code is nicely structured.
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Use a JavaScript timer to hide and show your duck.</li>
+			<li>Add another page flag.html which has three links showing three different country names. Each country flag should be displayed when the user clicks the country link. The flags should be created using pure HTML/CSS (no images).</li>
+			</ol>
+			The first requirement i solved by making a script that loads with the pages and generates the duck. It uses the setinterval function to make the duck blink.<br>
+			The second i solved with three divs and a javascript. The script contains methods to set styles for the divs in onclick actions of flag buttons.
+			<h4>Grade 5:</h4>
+			<ol>
+			<li>Add a select/option form element and fill it up with some municipalities (at least three) in Sweden. The municipality data should be fetch() from a json file and used to populate the select/option. When the user selects a option, another fetch should be done to retrieve and update the HTML table with all schools in that municipality.</li>
+			<li>When the flag is displayed, hide the flag when the user clicks on it. Use a CSS transition to make a smooth transition from displayed to not displayed.</li>
+			<li>Organise your code for flag and duck, using JavaScript object {}, where feasible, using properties and methods.</li>
+			</ol>
+			The first requirement i solved by making a script thats loads with the page and initialises a select with all distrticts that are fetched. When a distrit is selected the schools are fetched and put in the table.<br>
+			For the second i added a transition in css ease-in-out. on the divs of the flag.<br>
+			The third was already in place. With a flag object with the divs. And the code was split up in methods.
+			
             </p>
-            <p>TIL:<br> 
+            <p><em>TIL:</em><br> <br>
             I have deepened my js,css and html skills. Learned alot about how to generate html content from js. It was nice to try fetch.  
             </p>
         </section>
 
         <section>
         <h2>S04</h2>
-        <p>Tell me about your previous experience on node/npm or any equal programming tools.<br>
+        <p><em>Tell me about your previous experience on node/npm or any equal programming tools.</em><br><br>
             -None what so ever.
         </p>
-        <p>How do you feel about working with JavaScript, Node and Express?<br>
+        <p><em>How do you feel about working with JavaScript, Node and Express?</em><br><br>
             - I think it is fun. Js makes html pages more useful and dynamic. Node and Express was really nice. 
         </p>
-        <p>Explain how you did take on the coding assignment, did you have a plan and did it work?<br>
+        <p><em>Explain how you did take on the coding assignment, did you have a plan and did it work?</em><br><br>
             -It was alot of trail and error. I was very happy that the teacher made example code. This made it much easier to understand an getting started. 
         </p>
-        <p>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the resul?<br>
-            -I started with grade 3 requirements. Then moved on to 4 and finally 5. I am aming for a 5. I am  quite satisfied with my lotto solution  :)
+        <p><em>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</em><br><br>
+			-I started with grade 3 requirements. I am  quite satisfied with my lotto solution  :)
+			
+			I started with grade 3 requirements. It was kind of tricky at first i tried very many things just for fun. I am happy with the resulting code. 
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Add the path lotto-json which produces a JSON response of the lotto draw.</li>
+			<li>Enable to send in your own lotto row, through the query string, like this lotto-json?row=1,3,7,9,28,33,35</li>
+			<li>The JSON response should contain the data of your own row of numbers.</li>
+			<li>The JSON response should contain how many numbers you had correct.</li>
+			</ol>
+			The first requuirement i solved by adding an enpint andd randomly generted seven uniqe numbers. Then i returned them with result.json().<br>
+			The second i solved by getting the req.query and read "row". And i created a method to loop through the numbers and see how many correct numbers where selected.<br>
+			Third and fourth was included in the response. When query was present.
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Enable to send in your row through the query string, using lotto?row=1,3,7,9,28,33,35./li>
+			<li>Update the web page and do a nice output showing a table where your own numbers are marked.</li>
+			<li>Update the web page and do another nice output showing a table where the actual number from the lotto draw, are marked.</li>
+			<li>Add to the page, a message showing how many correct numbers you had.</li>
+			</ol>
+			I solved them all by updating the embedded javascript template. If User passed a row it will mark all correct numbers of the lotto row and notify the user how many correct numbers in a caption. If user did not select any numbers only the 
+			correct row will be shown.
         </p>
-        <p>TIL:<br> 
+        <p><em>TIL:</em><br> <br>
         I have deepened my js,css and html skills. It was fun to try node and express. I got a basic understanding of express server.
         </p>
         </section>
 
         <section>
         <h2>S05</h2>
-        <p>How do you feel about PHP as a programming language?<br>
+        <p><em>How do you feel about PHP as a programming language?</em><br><br>
             -I think it is really nice that it is only visible on the serverside. Feels safer than js. I really liked that php is loosely typed. It was really smooth to connect to database. There seems to be really nice ways to organise code with php.
         </p>
-        <p>Can you compare PHP to other languages you know?<br>
+        <p><em>Can you compare PHP to other languages you know?</em><br><br>
             -It reminds me of Java and c++. 
         </p>
-        <p>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?<br>
-            -I started with grade 3 requirements. Then moved on to 4 and finally 5. I am aming for a 5. It was kind of tricky at first i tried very many things just for fun. I am happy with the resulting code.
+        <p><em>Describe how you worked with the coding exercise, what grade do you aim for and how did your code turn out to be?</em><br><br>
+            I started with grade 3 requirements. It was kind of tricky at first i tried very many things just for fun. I am happy with the resulting code. 
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Create a page create.php to enable to create new rows into the table.</li>
+			<li>Create a page update.php to enable to update the values of a row in the table.</li>
+			</ol>
+			For the first requirement i did like the example on the lecture.<br>
+			For the second i lifted out the creation of the table to an external php file where id can be selected by clicking the table. Id was passed to a function so that the page could be reloaded with that id.
+			<h4>Grade 5:</h4>
+			<ol>
+			<li>Create a page delete.php to enable to delete rows from the table.</li>
+			<li>Create a page read.php to list the content of the table as a HTML table. Add links to click to provide easy navigation, by clicking a link, to create, update, delete the items in the database table. It should be possible to click on links to navigate and do all CRUD to the table.</li>
+			</ol>
+			In the first reqirement i reused the table navigation from grade 4 requirement 2.<br>
+			Second requirement here i just created a page that could show all rows.
+			
+			
+			
         </p>
-        <p>TIL:<br> 
+        <p><em>TIL:</em><br> 
         I have earned my first ever php skills.
         </p>
         </section>
 
         <section>
             <h2>S06</h2>
-            <p>What is your own opinion on popularity of programming languages and what are your thoughts of future popularity among programming languages?<br>
+            <p><em>What is your own opinion on popularity of programming languages and what are your thoughts of future popularity among programming languages?</em><br><br>
                 -It seems that the there is not alot of fast changes in the language market. At least if you look at the tiobe index where different languages are ranked over time.
                 I think there will be a big shift when a new paradigm appears on the market. There are a lot of different languages but they are quite similar in the basics. 
                 What differs is what frameworks they provide.
             </p>
-            <p>What will be your own choice for selecting future programming languages?<br>
+            <p><em>What will be your own choice for selecting future programming languages?</em><br><br>
                 - I will be looking in to C# since they are rewriting their old .net to .net core wich is platform independant. I think this will increase in popularity. I think an important 
                 parameter when selecting language is where the language is going. Is it being developed? How much effort is given in improving its codebase? Is it platform independant?
             </p>
-            <p>Do your own investigation on https://trends.google.com (Links to an external site.) to customize your own comparison on programming languages (or frameworks) and elaborate on the results.<br>
+            <p><em>Do your own investigation on https://trends.google.com (Links to an external site.) to customize your own comparison on programming languages (or frameworks) and elaborate on the results.</em><br><br>
                 - I compared c# and java the result correlated with tiobe index that java is more popular. But C# seems to have 30 % of their combined market on google and 23% on tiobe index.
             </p>
-            <p>If you were to recommend a language/framework/technology to your potential employer and your next large project, what would it be and how would you “sell it”?
+            <p><em>If you were to recommend a language/framework/technology to your potential employer and your next large project, what would it be and how would you “sell it”?</em><br><br>
                 I would sell it based on which frameworks are available and how fast it is compared to others developing the type of applications that the employer is interested of. The employer likely already is 
                 using a language and a framework that could be compared to others. But i think it is har to push for a new language. Maintainance and education will be more expensive to the company if it has a large 
                 portfolio with varying languages and frameworks.
             </p>
-            <p>TIL:<br> 
+            <p><em>TIL:</em><br> 
             I think the best learning of this lecture was about the different javascript flavors. Both tiobe and state of sscript was really interesting.  
             </p>
         </section>
 
         <section>
         <h2>S07</h2>
-        <p>Try to explain the platform .NET (C#, ASP.NET) to a skilled programmer, but newbie to this Microsoft technology.<br>
-            - It is a gigantic platfom. C# is very similar to java. It has a JIT just like java. And is executed in a virtual machine Asp.net is a framework for web apps. It provides webpatterns like MVC etc.  
+        <p><em> Try to explain the platform .NET (C#, ASP.NET) to a skilled programmer, but newbie to this Microsoft technology.</em><br><br>
+            - It is a gigantic platfom. .Net is very big and have alot of functionality. It has classes for both web development and windows desktop development.  C# is very similar to java. It is object oriented. It has a JIT just like java. And is executed in CLR(common language runtime). Asp.net is a framework for web apps. It provides webpatterns like MVC etc. 
+            Asp.net can use the class libraries of .Net that are used in desktop applications. 
         </p>
-        <p>Elaborate by comparing .NET technologies with the other technologies we learned during the course.<br>
-            -.Net is very big and have alot of functionality. The MVC is implemented in both Express and .Net asp but asp is much nicer and userfriendly. 
+        <p><em>Elaborate by comparing .NET technologies with the other technologies we learned during the course.</em><br><br>
+            - The MVC is implemented in both Express and asp.Net asp but asp is much nicer and userfriendly. One big differance is that Express and php are scriptbased and asp is not.  
+            There are thousands of of classes types and  
         </p>
-        <p>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?<br>
-            -I watched the videos and attended the lectures. Then i started with the console application. Then i did the asp.net. I am quite pleased with my result There
-            is alot of error handling. And i produced two robust applications. They both have all requirements for grade 5.
+        <p> <em> Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result? </em> <br><br>
+            -I watched the videos and attended the lectures. Then i started with the console application. Then i did the asp.net.
+			<h3>Consol</h3>
+            I started with grade 3 requirements. 
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Add a choice "Search" that ask the user for a search string.</li>
+			<li>Add a choice "move" that moves money (balance) from one account number to another account number. Save the updated JSON file.</li>
+			</ol>
+			The first requriement is solved using LINQ's where function looping through an IEnumerable of accounts. Within "where" i used to "lower()" and finally "contains" to check for matching substrings. 
+			The second requirement is solved by looping th user through a process of inputing correctly formatted information and when user confirms the correctness. The transactiuon is saved to json file.
+			
+			<h4>Grade 5:</h4>
+			<ol>
+			<li>Add a choice "New account" that creates a new account. Ask the user for account details. Save the updated JSON file.</li>
+			<li>Organise your code in at least one external class in its own file.</li>
+			</ol>
+			The first requirement is solved by looping th user through a process of inputing correctly formatted information and when user confirms the correctness. Then the new account is written to jsonfile.<br>
+			The second was already solved. I was already using a "Program" class with main, a "Bank" class with the entire bank logic and the "Account" model class.
+			
+			<h3>Webapp</h3>
+            -I started with grade 3 requirements. 
+			<h4>Grade 4:</h4>
+			<ol>
+			<li>Add a controller that supports moving between two accounts. You may choose to solve this using the rest api or through a html form. Use a POST or PUT method. GET is not the prefered way when updating the state of the web application.</li>
+			</ol>
+			I solved it by adding an endpoint api/accounts/transfer as a PUT. A json object of transaction model is passed in the body. The transfer is processed in the service class. Where the request is error checked, validating accounts 
+			and balance to the transfer request. If no error the transfer is performed. Controller sends back an Ok response (200). If there is an error in the request conflict is returned (409) with a json object in the body containging an array of errors. 
+ 			<h4>Grade 5:</h4>
+			<ol>
+			<li>Make it possible to move money between accounts using both a HTML post form and through the JSON REST API. Use controllers and models to separate your code and use Razor for the html form pages. Use POST and PUT as request method.</li>
+			</ol>
+			I made a form on the page that has the account table and a post endpoint in the controller. The processing is the same as in grade 4. It differs that when it succeds server responds vith a redirect so that the table is relodad.
+			
+			
+			I am aming for grade 5.
         </p>
-        <p>TIL:<br> 
+        <p><em>TIL:</em><br> 
         It was my first time testing asp.net. I learned alot. Think that razor pages are really smooth and easy to use. The model view controller concept is easy to understand.
         </p>
         </section>
@@ -140,7 +230,7 @@
         <section>
         <h2>S08</h2>
             <label for="spoiler8">S08</label>
-            <div class="spoiler">
+            <div>
                 <div style="font-style: italic; font-size: large; text-align: center;">2020-03-10</div>
                 <p style="margin-bottom: 0px">Group members: <a href="https://okarstrom.github.io/websoft/">Oskar Karström</a>, 
                 <a href="https://ffredlund.github.io/websoft/">Filip Fredlund</a>, 
@@ -179,17 +269,17 @@
 
         <section>
         <h2>S09</h2>
-        <p>Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten.<br>
+        <p><em>Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP top ten.</em><br>
             - One of the OWASP top ten was injection. When it comes to sql injection preparedstatements are a good option. Then there is a control that no other commands than the intended are executed. Security miss configuration was another
             of the top ten. This is a common misstake when installing openssh on Linux. It Defaults to port 22 and and can be sensitive for attacks. This port should be changed and use public key access instead of password login. Using components with known 
             vulnerabilities is another. This could be as simple as just updating your server with the latest updates. Avoiding vulnerabilities to be used.
         </p>
-        <p>Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.<br>
+        <p><em>Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.</em><br>
             - When it comes to sql injection preparedstatements are a good option. Then there is a control that no other commands than the intended are executed. Never have easy to crack passwords and never have the same password to different logins. Keep your software updated 
             so that nobody uses vulnerabilities for malicous purposes. Remove unused admin accounts and close unused ports. Use ssl for encrypted communications. Use a good firewall that only allows the intended type of traffic. Encrypt sensative data incase of a breach.
 
         </p>
-        <p>TIL:<br> 
+        <p><em>TIL:</em><br> 
         I got a basic view on web application vulnerabilities. I still feel like i still have a lot to learn on security issues. I think we got some good advice that are quite easy to implement like preparedstatements against sql injection. 
         </p>
         </section>

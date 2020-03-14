@@ -3,12 +3,9 @@
 (function () {
     var duck = document.createElement("img"); 
     addDuck(duck);
-    var move = 0;
 
     setInterval(function () { 
-        move++;
-        move %= 8; 
-        blink(duck, move);
+        blink(duck);
     }, 400);
   })();
 
@@ -23,21 +20,10 @@ function addDuck(duck){
     };
 }
 
-function blink(duck, move) {
-    /*if (move === 1){
-        duck.style.top = Math.floor(Math.random() * 50 + 25) + '%';
-        duck.style.left = Math.floor(Math.random() * 50 + 25) + '%';
-    }*/
-
-    if (duck.style.visibility === "visible"){
-        setTimeout(function () {
-            duck.style.visibility = "hidden";
-        }, 500);
-    }
-    else{
-        setTimeout(function () {
-            duck.style.visibility = "visible";
-        }, 500);
-    }
+function blink(duck) {
+    if (duck.style.visibility === "visible")
+        duck.style.visibility = "hidden";
+    else
+        duck.style.visibility = "visible";
 }
   
